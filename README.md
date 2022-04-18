@@ -4,3 +4,4 @@
 
 <h2 align="center">Демонстрация работы приложения</h2>
 <img src="/preview.gif" width="1012">
+

@@ -5,3 +5,4 @@
 <h2 align="center">Демонстрация работы приложения</h2>
 <img src="/preview.gif" width="1012">
 
+<h4 align="center"><a href="https://aleksej-tashlykov.github.io/weather-forecast.github.io/">Weather Forecast</a></h4>

@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: transparent;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  outline: transparent;
+}
+
+.container {
+  max-width: 1344px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.main-page {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.weather {
+  min-height: 100vh;
+  padding: 80px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(51, 51, 51, 0.4),
+      rgba(51, 51, 51, 0.4)
+    ),
+    url("../images/bg.jpg");
+  background-size: cover;
+}
+
+.weather-inner {
+  width: 68.13271604938272%;
+  margin: 0 auto;
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.select-wrap {
+  position: relative;
+
+  width: 24.91506228765572%;
+}
+
+.select {
+  position: relative;
+}
+
+.select-btn {
+  position: relative;
+
+  width: 100%;
+
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+  color: #ffffff;
+
+  padding: 0 15px;
+
+  border: 2px solid #d8d9db;
+  border-radius: 5px;
+
+  background-color: transparent;
+}
+
+.select-btn::before {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  display: block;
+  content: "";
+
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+
+  border-color: #ffffff transparent transparent transparent;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.select-btn:focus,
+.select-btn-active {
+  background-color: #465e8e;
+}
+
+.select-list {
+  position: absolute;
+
+  width: 100%;
+
+  border: 2px solid #d8d9db;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: all ease 0.5s;
+
+  z-index: 1;
+}
+
+.select-item {
+  padding: 0 15px;
+
+  line-height: 35px;
+
+  border-bottom: 0.5px solid #d8d9db;
+
+  background-color: #a3a3a4;
+
+  transition: all ease 0.5s;
+}
+
+.select-item:last-child {
+  border-bottom: none;
+}
+
+.select-item:hover {
+  background-color: #465e8e;
+}
+
+.weather-content {
+  width: 89.58097395243488%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-card {
+  width: 66.11883691529709%;
+  padding: 30px 0;
+
+  text-align: center;
+
+  border: 1px solid #d8d9db;
+  border-radius: 5px;
+}
+
+.current-date {
+  min-height: 19px;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.city-name {
+  margin-bottom: 50px;
+  min-height: 30px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.weather-description {
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #d8d9db;
+}
+
+.weather-description-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sunset-icon,
+.sunrise-icon {
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.temp {
+  min-height: 204px;
+}
+
+.temp-value {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 88px;
+  letter-spacing: 0.07em;
+}
+
+.temp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.option-list {
+  padding-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.option-item {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.option-icon {
+  margin-bottom: 10px;
+}
+
+.aside-title {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.aside-item {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.aside-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.aside-icon {
+  margin-right: 15px;
+  border-radius: 5px;
+}
